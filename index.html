@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Information System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Personal Information System</h1>
+        <p class="subtitle">Enter your personal information</p>
+
+        <form action="save.php" method="POST">
+
+            <label>Full Name</label>
+            <input type="text" name="full_name" required>
+
+            <label>Email</label>
+            <input type="email" name="email">
+
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+
+            <label>Date of Birth</label>
+            <input type="date" name="dob">
+
+            <label>Gender</label>
+            <select name="gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Address</label>
+            <textarea name="address"></textarea>
+
+            <label>Education</label>
+            <input type="text" name="education">
+
+            <label>Skills</label>
+            <input type="text" name="skills"
+                   placeholder="Java, HTML, CSS, JavaScript">
+
+            <button type="submit">Save Information</button>
+
+        </form>
+
+        <a href="view.php" class="view-btn">
+            View Saved Information
+        </a>
+
+    </div>
+
+</body>
+</html>
